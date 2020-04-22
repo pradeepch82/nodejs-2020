@@ -1,0 +1,176 @@
+Node JS
+=======
+
+HTML + JS  => DHTML
+===================
+
+Java Script -
+
+       Object based
+
+
+
+Languaage Objects
+==================
+String
+Math
+Date
+Boolean
+Number
+Array
+Object
+
+Browser Objects
+===================
+window
+document
+history
+TextField
+
+
+
+Node JS   :    Serverside JS
+===========
+
+    Node JS  => Java Script run time environment + builting JS libraries (modlues or packages)
+
+
+Node JS builtin libraries (packages or modules)
+===============================================
+global modules
+
+
+
+os         => get the info about os 
+buffer     => global mdoule
+timers     => global module
+fs         => Reading and writing 
+events     => to handle events
+
+           EventEmitter
+             on             => handle the events
+             addListener    => handle the events
+             emit           => firing the event
+ 
+http
+url
+
+process
+
+Node JS built in modules 
+===========================
+os,buffer,fs,timers,events,http,url,process,path
+
+
+
+Step 1 :create folder pradeep-express-app
+
+Step 2 :from commandline use  command  to produce package.json :npm init
+
+Step 3 :Install express   : npm i express
+
+Step 4 :Write index.js  and write code
+
+Step 5 :npm start
+
+
+Install express-generator tool for creating express app
+========================================================
+npm i -g express-generator
+
+
+
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+Third party modules  (Need to be installed using npm (Node Package Manager))
+===========================================================================
+express  (http+url+additinal things)
+
+body-parser
+cookie-parser
+express-session
+mysql
+mongoose
+nodemon
+
+
+day2
+=====
+/hello => 
+/welcome =>
+/greet
+
+
+Develop a Express Application to provide  below services(Restful API)  
+
+Data Source : Array
+====================
+http://localhost:3000/bangkingarray/accounts       : GET     => GET ALL ACCOUNTS
+http://localhost:3000/bangkingarray/accounts/101   : GET     => GET ACCOUNT  WITH ACCNO
+http://localhost:3000/bangkingarray/accounts/101   : PUT     => UPDATE ACCOUNT WITH ACCNO
+http://localhost:3000/bangkingarray/accounts/103   : DELETE  => DELETE ACCOUNT WITH ACCNO
+http://localhost:3000/bangkingarray/accounts       : POST    => ADD ACCOUNT
+
+
+Data Source : MySQL
+====================
+http://localhost:3000/bangkingmysql/accounts       : GET     => GET ALL ACCOUNTS
+http://localhost:3000/bangkingmysql/accounts/101   : GET     => GET ACCOUNT  WITH ACCNO
+http://localhost:3000/bangkingmysql/accounts/101   : PUT     => UPDATE ACCOUNT WITH ACCNO
+http://localhost:3000/bangkingmysql/accounts/103   : DELETE  => DELETE ACCOUNT WITH ACCNO
+http://localhost:3000/bangkingmysql/accounts       : POST    => ADD ACCOUNT
+
+
+Data Source : MongoDB
+====================
+http://localhost:3000/bangkingmongodb/accounts       : GET     => GET ALL ACCOUNTS
+http://localhost:3000/bangkingmongodb/accounts/101   : GET     => GET ACCOUNT  WITH ACCNO
+http://localhost:3000/bangkingmongodb/accounts/101   : PUT     => UPDATE ACCOUNT WITH ACCNO
+http://localhost:3000/bangkingmongodb/accounts/103   : DELETE  => DELETE ACCOUNT WITH ACCNO
+http://localhost:3000/bangkingmongodb/accounts       : POST    => ADD ACCOUNT
+
+
+
+
+
+
+
+
+
+GET     =>   ?accno=101&name=pradeep&balance=12000
+POST    => 
+PUT     =>
+DELETE  =>
+PATCH   => 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
