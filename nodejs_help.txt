@@ -129,6 +129,7 @@ http://localhost:3000/bangkingmysql/accounts/103   : DELETE  => DELETE ACCOUNT W
 http://localhost:3000/bangkingmysql/accounts       : POST    => ADD ACCOUNT
 
 
+
 Data Source : MongoDB
 ====================
 http://localhost:3000/bangkingmongodb/accounts       : GET     => GET ALL ACCOUNTS
@@ -136,6 +137,33 @@ http://localhost:3000/bangkingmongodb/accounts/101   : GET     => GET ACCOUNT  W
 http://localhost:3000/bangkingmongodb/accounts/101   : PUT     => UPDATE ACCOUNT WITH ACCNO
 http://localhost:3000/bangkingmongodb/accounts/103   : DELETE  => DELETE ACCOUNT WITH ACCNO
 http://localhost:3000/bangkingmongodb/accounts       : POST    => ADD ACCOUNT
+
+
+
+
+Develop a Express Application to provide  below (CRUD) operations on Employee using (Restful API)  
+
+Employee
+
+    id
+	name 
+    salary
+    doj
+    mobile
+    pan 
+
+
+http://localhost:8081/companyarray/employees
+	
+
+
+http://localhost:8081/companymysql/employees
+
+
+
+http://localhost:8081/companymongodb/employees
+
+
 
 
 
