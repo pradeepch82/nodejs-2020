@@ -1,0 +1,295 @@
+What is Node JS ?
+===================
+
+Node.js is a powerful framework developed on Chrome’s V8 JavaScript engine that compiles the JavaScript directly into the native machine code.
+
+It is a lightweight framework used for creating server-side web applications and extends JavaScript API to offer usual server-side functionalities. 
+
+It is generally used for large-scale application development, especially for video streaming sites, single page application, and other web applications. 
+
+Node.js makes use of an event-driven, non-blocking I/O model which makes it a right pick for the data-intensive real-time applications.
+
+Like any other programming languages, node.js makes use of packages and modules. These are the libraries that contain various functions and are imported from npm (node package manager) into our code and utilized in the programs. 
+
+
+
+Features of Node JS
+===================
+Open SourceNode.js is an open source framework MIT license that is supported by a huge community. Its community is pretty much active have contributed to add new capabilities to Node.js applications.
+
+Simple and FastSince Node.js is built on Google Chrome’s V8 JavaScript Engine, its libraries are capable of fast code execution.
+
+AsynchronousAll the libraries of Node.js are asynchronous which means the Node.js based servers never wait for an API to send back the response and move on to the next API.
+
+High ScalabilityBecause of the event mechanism, Node.js is highly scalable and aids the server in a non-blocking response.
+
+Single-ThreadedWith the help of event looping, Node.js is able to follow the single-threaded model. This lets a single program to handle multiple requests.
+
+No BufferingOne of the major functionalities of Node.js applications is that it never buffers any data.
+
+Cross-PlatformNode.js can be easily built and deployed on various platforms like Windows, MAC, and Linux.
+
+NPM (Node Package Manager)
+===========================
+
+NPM stands for Node Package Manager which as the name suggests is a package manager for Node.js packages/modules. From Node version 0.6.0. onwards,
+
+ npm has been added as default in the node installation. 
+
+It saves you from the hassle of installing npm explicitly.
+
+NPM basically helps in two ways:
+Provides and hosts Online repositories for node.js packages/modules which can be easily downloaded and used in our projects. You can find them here: npmjs.com
+
+Provides the Command line utility in order to install various Node.js packages, manage Node.js versions and dependencies of the packages.
+
+
+Node JS modules
+===============
+The modules in Node.js represents various functionalities that are bundled up into single or multiple JS files. 
+
+These modules have a unique context, thus, they never interfere nor pollute the scope of other modules.
+
+These modules enable the code reusability and enhance the ease of usage. Node.js basically provides three types of modules:
+Core Modules
+Local Modules
+Third-Party Modules
+
+You can load module, using the below code:
+         var module = require('module_name');
+
+
+
+Node JS Core Module
+======================
+Since Node.js is a very lightweight framework, the core modules bundle the absolute minimum functionalities. These modules generally get loaded when the Node process starts its execution. All you need to do is, import these core modules in order to use them in your code.
+Below are few important core modules
+
+http
+url
+querystring
+path
+fs
+util
+
+
+Node JS Local Module
+========================
+
+The local modules of Node.js are custom modules 
+     that are created locally by user/developer 
+     in the application. 
+These modules can include various functionalities
+    bundled into distinct files and folders which can 
+    be easily distributed in the Node.js community 
+    using NPM.
+
+Thirs party or external modules
+================================
+You can use the external or 3rd party modules only by downloading them via NPM. These modules are generally developed by other developers and are free to use. Few of the best external modules are express, react, gulp, mongoose, mocha etc.
+
+Globally Loading the 3rd party modules:
+npm install -g <module_name>
+
+Include your module file in your main application file:
+npm install --save <module_name>
+
+
+JSON File
+=============
+
+The package.json file in Node.js is the heart of the entire application. It is basically the manifest file that contains the metadata of the project. Thus, understanding and working with this file becomes very important for a successful Node project development.
+
+The package.json file generally consists of the metadata of the application, which is further categorized into below two categories:
+
+Identifying metadata properties: This consists of properties like the project name, current module version, license, author of the project, project description etc.
+
+Writing directly to file: You can directly write the necessary information into the package.json file and include it, in your project.
+
+By now you have already familiarized with the various components of Node JS application. In the next section of this Node.js Tutorial, I will be sharing some Node Js basics so that we can start off with the hands on.
+
+Node JS Basics
+=================
+Since Node.js is a JavaScript framework, it uses the JavaScript syntax. If you want to learn JavaScript in detail, you can refer to this JavaScript Tutorial. For now, I will be brushing you up with some Node.js basics like:
+
+Data Types
+Like any other programming language, Node.js has various datatypes, which are further categorized into Primitive and Non-Primitive datatypes.
+
+Primitive Data Types are:
+-------------------------
+String
+Number
+Boolean
+Null
+Undefined
+
+Non-Primitive Data Types are:
+------------------------------
+Object
+Date
+Array
+
+
+Variables
+-----------
+Variable are entities that hold values which may vary during the course of a program. To create a variable in Node.js, you need to make use of a reserved keyword var. You do not have to assign a data type, as the compiler will automatically pick it.
+Syntax:
+var varName = value;
+Operators: Node JS supports below operators
+var varName = value;
+
+
+
+Functions
+-----------
+Functions in Node.js is a block of code that has a name and is written to achieve a particular task. You need to use the keyword function to create it. A function is generally a two-step process. First is defining the function and the second is invoking it. Below is the syntax of creating and invoking a function:
+
+
+Objects
+--------
+An object is a non-primitive data type that can hold multiple values in terms of properties and methods. Node.js objects are standalone entities as there is no concept of class. You can create an object in two ways:
+Using Object literal
+Using Object constructor
+
+fs module
+==========
+To access the physical file system, Node.js makes use of the fs module which basically takes care of all asynchronous and synchronous file I/O operations. This module is imported using the below command:
+var fs = require('fs');
+
+Some of the general use for the File System modules are:
+Read files
+Create files
+Update files
+Rename files
+
+Events Modules
+===============
+Node.js applications are single threaded and event-driven. Node.js supports concurrency as it is event-driven, and thus makes use of concepts like events and callbacks. The async function calls help Node.js in maintaining concurrency throughout the application.
+
+Basically, in a Node.js application, there is a main loop which waits and listens for events, and once any event is completed, it immediately initiates a callback function.
+
+
+
+Even though events look similar to callback functions but the difference lies in their functionalities. 
+
+When an asynchronous function returns its results callbacks are invoked on the other hand event handling completely works on the observer pattern. 
+
+And in Node.js, methods which listen to the events are called the observers. 
+
+The moment, an event is triggered, its listener function automatically starts executing.
+
+ Event modules and EventEmitter class provide multiple in-built events which are used to bind events with event listeners. Below I have written down the syntax for that.
+
+
+HTTP Module
+============
+Generally, Node.js is used for developing server-based applications.
+
+ But using the module, you can easily create web servers that can respond to the client requests. 
+
+Thus it is also referred to Web Module and provides modules like HTTP and request that facilitate Node.js in processing the server requests.
+
+You can easily include this module in your Node.js application just by writing the below code:
+
+
+Express JS
+============
+Express.js is a framework built on top of Node.js that facilitates the management of the flow of data between server and routes in the server-side applications.  It is a lightweight and flexible framework that provides a wide range of features required for the web as well as mobile application development.
+
+Express.js is developed on the middleware module of Node.js called connect. The connect module further makes use of http module to communicate with Node.js. Thus, if you are working with any of the connect based middleware modules, then you can easily integrate with Express.js.
+
+Few of the major advantages of Express.js are:
+
+Makes web application development faster
+Helps in building mobile and web application of single-page, multi-page, and hybrid types
+Express provides two templating engines namely, Jade and EJS
+Express follows the Model-View-Controller (MVC) architecture
+Makes integration with databases such as MongoDB, Redis, MySQL
+Defines an error handling middleware
+Simplifies configuration and customization easy for the application.
+
+
+With all these features, Express takes responsibility of backend part in the MEAN stack.
+
+ Mean Stack is the open-source JavaScript software stack that is used for building dynamic websites and web applications. Here, MEANstands for MongoDB, Express.js, AngularJS, and Node.js.
+
+Lets now see a simple example to understand, how Express.js works with Node.js to ease our work. But before you start working with Express.js, you need to install it in your system.
+
+To install Express.js globally you can use the below command:
+npm install -g express
+Or, if you want to install it locally into your project folder, you need to execute the below command:
+npm install express --save
+
+
+Asynchronous Programming
+=========================
+Call Stack
+Callbacks, Callback Queue and Event Loop
+Callback Abstraction
+Callback Chaining
+Promises
+Promise Chaining
+Request Package
+Customizing HTTP Requests
+Error handing with appropriate HTTP codes
+Introduction to template engine (EJS)
+
+
+Integration with MongoDB and Email Servers
+============================================
+Introduction to NoSQL Databases and MongoDB
+Installation of MongoDB on Windows
+Installation of Database GUI Viewer
+Inserting Documents
+Querying, Updating and Deleting Documents
+Connect MongoDB and Node.js Application
+Exploring SendGrid
+Sending emails through Node.js application using SendGrid
+
+
+REST APIs and GraphQL
+=====================
+REST API
+REST API in Express
+Postman
+MongoDB Driver API
+Express Router
+Mongoose API
+GraphQL
+GraphQL Playground
+
+Building Node.js Applications using ES6
+=======================================
+Authentication
+Types of Authentication
+Session Vs Tokens
+JSON Web Tokens
+Bcrypt
+Node-localstorage
+
+Dynamic Client-Server Interaction using Socket.IO
+=====================================================
+Writing Tests and Assertions
+Testing Asynchronous Code
+Testing an Express Application
+Setup and Teardown
+Testing with Authentication
+Advanced Assertions
+Mocking Libraries
+Wrapping up User Tests
+Setup Task Test Suite
+Testing with Task Data
+
+Dynamic Client-Server Interaction using Socket.IO
+=====================================================
+Why Microservices?
+What is Microservices?
+Why Docker?
+What is Docker?
+Terminologies in Docker
+Child Processes
+Types of child process
+
+
+
+
